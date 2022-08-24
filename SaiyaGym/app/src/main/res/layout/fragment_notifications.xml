@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorNutricion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Principal.Fragments_Principales.Nutricion.NotificationsFragment">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="1024dp"
+        android:layout_height="611dp"
+        android:layout_marginBottom="440dp"
+        android:src="@drawable/ic_baseline_brightness_naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.388"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tittle_nutricion"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView13" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="209dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/fondo_nada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="419dp"
+        android:layout_height="60dp"
+        android:background="@color/dorado_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnComida"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/naranja"
+        android:onClick="onClick"
+        android:src="@drawable/comida"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnBebida"
+        app:layout_constraintStart_toEndOf="@+id/btnBebida"
+        app:layout_constraintTop_toTopOf="@+id/btnBebida" />
+
+    <TextView
+        android:id="@+id/txtcomida"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/titulo__comida"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnComida"
+        app:layout_constraintStart_toStartOf="@+id/btnComida"
+        app:layout_constraintTop_toBottomOf="@+id/btnComida" />
+
+    <ImageView
+        android:id="@+id/btnSuplemento"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/naranja"
+        android:onClick="onClick"
+        android:src="@drawable/suplemento"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbebida" />
+
+    <TextView
+        android:id="@+id/txtsuplementos"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/suplementos_titulo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnSuplemento"
+        app:layout_constraintStart_toStartOf="@+id/btnSuplemento"
+        app:layout_constraintTop_toBottomOf="@+id/btnSuplemento" />
+
+    <ImageView
+        android:id="@+id/btnPedidos"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/naranja"
+        android:onClick="onClick"
+        android:src="@drawable/dieta"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSuplemento"
+        app:layout_constraintStart_toEndOf="@+id/btnSuplemento"
+        app:layout_constraintTop_toTopOf="@+id/btnSuplemento" />
+
+    <TextView
+        android:id="@+id/txtdieta"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/dietaTitulo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnPedidos"
+        app:layout_constraintStart_toStartOf="@+id/btnPedidos"
+        app:layout_constraintTop_toBottomOf="@+id/btnPedidos" />
+
+    <ImageView
+        android:id="@+id/btnBebida"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/naranja"
+        android:onClick="onClick"
+        android:src="@drawable/bebida"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/txtbebida"
+        android:layout_width="0dp"
+        android:layout_height="33dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/bebida_titulo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnBebida"
+        app:layout_constraintStart_toStartOf="@+id/btnBebida"
+        app:layout_constraintTop_toBottomOf="@+id/btnBebida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

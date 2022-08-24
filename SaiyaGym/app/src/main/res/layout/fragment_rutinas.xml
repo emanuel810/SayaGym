@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorRutinasCoashing"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Principal.Fragments_Principales.Coaching.Rutinas.RutinasFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="419dp"
+        android:layout_height="60dp"
+        android:background="@color/dorado_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/rutinas_titulo"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnRegresarCoachingR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/regresar_boton"
+            app:backgroundTint="@color/verde_Limon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnEjercicios"
+        android:layout_width="338dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@mipmap/ic_musculos_foreground"
+        android:text="@string/ejerciciosIndependientes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <Button
+        android:id="@+id/btnEjerciciosRutina"
+        android:layout_width="338dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@mipmap/ic_rutinas_foreground"
+        android:text="@string/rutinaEjercicio"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjercicios" />
+
+    <Button
+        android:id="@+id/btnConsejos"
+        android:layout_width="338dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="56dp"
+        android:drawableLeft="@mipmap/ic_consejos_foreground"
+        android:text="@string/consejosTitulo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEjerciciosRutina" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

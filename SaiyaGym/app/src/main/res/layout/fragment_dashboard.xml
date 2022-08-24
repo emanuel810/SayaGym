@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenedorCoaching"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Principal.Fragments_Principales.Coaching.DashboardFragment">
+
+    <TextView
+        android:id="@+id/txtbebida2"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/entrenadores_titulo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnEntrenador"
+        app:layout_constraintStart_toStartOf="@+id/btnEntrenador"
+        app:layout_constraintTop_toBottomOf="@+id/btnEntrenador" />
+
+    <TextView
+        android:id="@+id/txtbebida3"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/rutinas_titulo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnRutinas"
+        app:layout_constraintStart_toStartOf="@+id/btnRutinas"
+        app:layout_constraintTop_toBottomOf="@+id/btnRutinas" />
+
+    <TextView
+        android:id="@+id/txtbebida4"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/avancesTitulso"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnResumen"
+        app:layout_constraintStart_toStartOf="@+id/btnResumen"
+        app:layout_constraintTop_toBottomOf="@+id/btnResumen" />
+
+    <TextView
+        android:id="@+id/txtbebida5"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:text="@string/accesorio"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/btnPrenda"
+        app:layout_constraintStart_toStartOf="@+id/btnPrenda"
+        app:layout_constraintTop_toBottomOf="@+id/btnPrenda" />
+
+    <ScrollView
+        android:layout_width="419dp"
+        android:layout_height="60dp"
+        android:background="@color/dorado_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="1024dp"
+        android:layout_height="611dp"
+        android:layout_marginBottom="440dp"
+        android:src="@drawable/ic_baseline_brightness_verde"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tituloFragmentDasboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/title_coaching"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="209dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="-20dp"
+        android:src="@drawable/fondo_nada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnEntrenador"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="110dp"
+        android:background="@color/verde_Limon"
+        android:src="@drawable/entrenadores"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tituloFragmentDasboard" />
+
+    <ImageView
+        android:id="@+id/btnRutinas"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/verde_Limon"
+        android:src="@drawable/rutinas"
+        app:layout_constraintBottom_toTopOf="@+id/txtbebida2"
+        app:layout_constraintStart_toEndOf="@+id/btnEntrenador"
+        app:layout_constraintTop_toTopOf="@+id/btnEntrenador" />
+
+    <ImageView
+        android:id="@+id/btnPrenda"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="8dp"
+        android:background="@color/verde_Limon"
+        android:src="@drawable/prenda"
+        app:layout_constraintBottom_toTopOf="@+id/txtbebida4"
+        app:layout_constraintStart_toEndOf="@+id/btnResumen"
+        app:layout_constraintTop_toTopOf="@+id/btnResumen" />
+
+    <ImageView
+        android:id="@+id/btnResumen"
+        android:layout_width="165dp"
+        android:layout_height="145dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/verde_Limon"
+        android:src="@drawable/resumen"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtbebida2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

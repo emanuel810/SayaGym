@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="52dp">
+
+    <TextView
+        android:id="@+id/hombroAvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="16dp"
+        android:text="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pechoAvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="39dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/hombroAvan"
+        app:layout_constraintStart_toEndOf="@+id/hombroAvan"
+        app:layout_constraintTop_toTopOf="@+id/hombroAvan" />
+
+    <TextView
+        android:id="@+id/espaldaAvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/pechoAvan"
+        app:layout_constraintStart_toEndOf="@+id/pechoAvan"
+        app:layout_constraintTop_toTopOf="@+id/pechoAvan" />
+
+    <TextView
+        android:id="@+id/brazoAvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/espaldaAvan"
+        app:layout_constraintStart_toEndOf="@+id/espaldaAvan"
+        app:layout_constraintTop_toTopOf="@+id/espaldaAvan" />
+
+    <TextView
+        android:id="@+id/abdomenAvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/brazoAvan"
+        app:layout_constraintStart_toEndOf="@+id/brazoAvan"
+        app:layout_constraintTop_toTopOf="@+id/brazoAvan" />
+
+    <TextView
+        android:id="@+id/piernaAvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="10"
+        app:layout_constraintBottom_toBottomOf="@+id/abdomenAvan"
+        app:layout_constraintStart_toEndOf="@+id/abdomenAvan"
+        app:layout_constraintTop_toTopOf="@+id/abdomenAvan" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

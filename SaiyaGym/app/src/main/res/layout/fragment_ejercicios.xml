@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/musculoContenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Activities.Principal.Fragments_Principales.Coaching.Rutinas.EjerciciosFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="419dp"
+        android:layout_height="60dp"
+        android:background="@color/dorado_claro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout7"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        android:background="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="@string/ejercicioTitulo"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/btnRegresarCoachingR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="16dp"
+            android:text="@string/regresar_boton"
+            app:backgroundTint="@color/verde_Limon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnHombros"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/hombrosTitulo"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout7" />
+
+    <Button
+        android:id="@+id/btnPecho"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/pechoTitulo"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnHombros" />
+
+    <Button
+        android:id="@+id/btnEspalda"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/espaldaTitulo"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnPecho" />
+
+    <Button
+        android:id="@+id/btnBiceps"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/bicepTitulo"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnEspalda" />
+
+    <Button
+        android:id="@+id/btnAbdomen"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/abdomenTitulo"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnTriceps" />
+
+    <Button
+        android:id="@+id/btnPierna"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/piernaTitulo"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAbdomen" />
+
+    <Button
+        android:id="@+id/btnTriceps"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tricepsTitulo"
+        app:backgroundTint="@color/verde_Limon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBiceps" />
+</androidx.constraintlayout.widget.ConstraintLayout>

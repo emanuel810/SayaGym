@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saiya_gym">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/entero"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/entero"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SaiyaGymMejorado">
+        <activity
+            android:name=".Activities.Inicio.TallasActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Principal.PrincipalActivity"
+            android:exported="true"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.SaiyaGym" />
+        <activity
+            android:name=".Activities.Inicio.ActivityIntegrantes"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Inicio.RegistroActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Activities.Inicio.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SaiyaGymMejorado" />
+        <activity
+            android:name=".Activities.Inicio.InicioActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
